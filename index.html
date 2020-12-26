@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content= "width=device-width ,inital-scale=1.0" >
+<title>COLORS</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<div class="container">
+   <div class="navbar">
+
+    <img src="image/logoo.png"  class="logoo">
+    <img src="image/menu-icon.png" class="menu-icon"> 
+  </div>
+  <div class="row">
+
+     <div class="left-col">
+         <div class="content">
+            <h2><span>COLORS</span> are the smiles of nature</h2>
+            <p>In nature, Light creates the colors In The Picture,<br> Creates The Light.</p>
+            <div class="arrow">
+                <img src="image/arrow.png"  > 
+               </div>
+                <img src="image/art.png" class="art">
+    </div>
+          
+
+     </div>
+     <div class="right-col">
+        <img src="image/pic1.png" id="picture">
+     </div>
+  
+   </div>
+   <div class="controller">
+
+      <ul>
+
+         <li class="active btn">01</li>
+         <li class="btn">02</li>
+         <li class="btn">03</li>
+         <li class="btn">04</li>
+
+
+
+      </ul>
+
+
+
+
+     </div>
+ 
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+      var btn = document.getElementsByClassName("btn");
+
+      var picture = document.getElementById("picture");
+
+
+         for (let i=0; i<btn.length; i++) {
+
+               btn[i].addEventListener('click', function(){
+
+                  let current = document.getElementsByClassName("active");
+                  current[0].className = current[0].className.replace("active","");
+                     this.className += " active";
+
+               });
+            }
+
+
+               btn[0].onclick = function() {
+ 
+                 picture.src = "image/pic1.png";
+                
+                  
+               }
+
+               btn[1].onclick = function() {
+ 
+                  picture.src = "image/pic2.png";
+
+               }
+
+               btn[2].onclick = function() {
+ 
+                     picture.src = "image/pic3.png";
+
+                     }
+
+
+               btn[3].onclick = function() {
+ 
+                  picture.src = "image/pic4.png";
+
+                  }
+
+
+
+         
+
+
+
+
+
+
+
+
+</script>
+
+
+  </body>
+</html>
